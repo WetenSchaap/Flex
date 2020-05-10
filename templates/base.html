@@ -204,7 +204,7 @@
         {% for name, link in SOCIAL %}
           <li>
             <a {% if name == 'mastodon' %}rel="me"{% endif %} class="sc-{{ name }}" href="{{ link }}" target="_blank">
-              <i class=name></i>
+              <i class="{{ name }}"></i>
             </a>
           </li>
         {% endfor %}
