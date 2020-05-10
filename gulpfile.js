@@ -27,8 +27,8 @@ gulp.task('uglify', function () {
 });
 
 gulp.task('cp', function () {
-    return gulp.src('./node_modules/font-awesome/**/*.{min.css,otf,eot,svg,ttf,woff,woff2}')
-        .pipe(gulp.dest('./static/font-awesome'));
+    return gulp.src('./node_modules/line-awesome/**/*.{min.css,otf,eot,svg,ttf,woff,woff2}')
+        .pipe(gulp.dest('./static/line-awesome'));
 });
 
 gulp.task('pygments', function () {
