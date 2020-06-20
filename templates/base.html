@@ -201,13 +201,14 @@
       {% endif %}
 
       <ul class="social">
-        {% for name, link in SOCIAL %}
+        {% for name, link, break in SOCIAL %}
           <li>
             <a {% if name == 'mastodon' %}rel="me"{% endif %}  href="{{ link }}" target="_blank">
             <i class="la-2x">  
             <i class="{{ name }}"></i>
             </i>
             </a>
+            {% if break == "1" %}<br>{% endif %}
           </li>
         {% endfor %}
       </ul>
